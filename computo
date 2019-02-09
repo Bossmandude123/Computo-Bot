@@ -1,0 +1,63 @@
+import java.util.Scanner;
+/**
+ * Computo-Bot
+ *
+ * @author Charlie Schmerzler
+ * @version 2/7/19
+ */
+public class userInput
+{
+    public static void main(String[] args)
+    {
+        Scanner bot = new Scanner(System.in);
+        System.out.println("Hello! I am Computo-Bot, your friendly robot companion!");
+        System.out.println("I want to get to know more about you! What is your name?");
+        String name = bot.nextLine ();
+        if (name.equalsIgnoreCase("Julia"))
+        {
+            System.out.println("Thot");
+        }
+        else
+        {
+            System.out.println("Wow! " + name + " is an awesome name. I wish I had it!");
+        }
+        System.out.println("How old are you?");
+        int age = bot.nextInt();
+        bot.nextLine();
+        if (age >= 18)
+        {
+            System.out.println("Aren't you a little old to be using a robot companion?");
+        }
+        else
+        {
+            System.out.println("That's awesome!");
+        }
+        System.out.println("You're the coolest person I've ever met! I think we're going to be good friends.");
+        System.out.println("By the way, what's your favorite subject in school?");
+        String subject = bot.nextLine ();
+        if (subject.equalsIgnoreCase("Math"))
+        {
+            System.out.println("Me too! I mean that's basically how I run. XD");
+        }
+        else
+        {
+            System.out.println("That's a cool course. I personally like math. I mean that's basically how I run. XD");
+        }
+        System.out.println("So do you play any sports? (y/n)");
+        String yeno = bot.nextLine ();
+        if (yeno.equalsIgnoreCase("y"))
+        {
+            System.out.println("Which sport?");
+            String sport = bot.nextLine ();
+          if (sport.equalsIgnoreCase("Wrestling"))
+          {
+            System.out.println("Hey that's what my creator did!");
+          }
+        
+        }
+        if (yeno.equalsIgnoreCase("n"))
+        {
+            System.out.println("Oh. Well I bet your putting that time to good use!");
+        }
+    }
+}
